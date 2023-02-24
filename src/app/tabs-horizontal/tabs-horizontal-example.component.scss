@@ -1,0 +1,28 @@
+.example-tab-content {
+    padding: 40px 15px;
+    line-height: 1.5;
+}
+
+.tab-demo {
+    border: 1px solid #e0e0e0;
+    min-height: 180px;
+}
+
+.tab-rename-input {
+    display: block;
+    max-width: 350px;
+}
+
+.example-tab-action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+        margin: 10px 10px 0 0;
+    }
+}
+
+.overflow-select-container {
+    margin-top: 20px;
+    max-width: 350px;
+}

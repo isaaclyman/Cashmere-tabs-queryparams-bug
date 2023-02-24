@@ -1,0 +1,16 @@
+<div class="tab-demo">
+  <hc-tab-set direction="horizontal" #tabSet>
+    <hc-tab
+      tabTitle="Child 1"
+      [routerLink]="['child-1']"
+      [queryParams]="getCurrentQueryParams()"
+    >
+    </hc-tab>
+    <hc-tab
+      tabTitle="Child 2"
+      [routerLink]="['child-2']"
+      [queryParams]="getCurrentQueryParams()"
+    >
+    </hc-tab>
+  </hc-tab-set>
+</div>
