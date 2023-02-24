@@ -14,6 +14,18 @@ import { TabChangeEvent, TabSetComponent } from "@healthcatalyst/cashmere";
 export class TabsHorizontalExampleComponent {
   constructor(private router: Router) {}
 
+  getActiveTabIx(): number {
+    if (this.router.url.includes("child-1")) {
+      return 0;
+    }
+
+    if (this.router.url.includes("child-2")) {
+      return 1;
+    }
+
+    return 0;
+  }
+
   getCurrentQueryParams(): Params {
     const urlTree = this.router.parseUrl(this.router.url);
     return urlTree.queryParams;
