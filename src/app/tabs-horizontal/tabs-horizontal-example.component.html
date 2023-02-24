@@ -1,10 +1,5 @@
 <div class="tab-demo">
-  <hc-tab-set
-    defaultTab="none"
-    [selectedTab]="getActiveTabIx()"
-    direction="horizontal"
-    #tabSet
-  >
+  <hc-tab-set [selectedTab]="getActiveTabIx()" direction="horizontal" #tabSet>
     <hc-tab
       tabTitle="Child 1"
       [routerLink]="['child-1']"
